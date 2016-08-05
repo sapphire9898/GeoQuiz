@@ -31,7 +31,7 @@ public class QuizActivity extends AppCompatActivity {
     private void checkAnswer(boolean userPressedTrue) {
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
         int messageResId = 0;
-        if (userPressedTrue = answerIsTrue) {
+        if (userPressedTrue == answerIsTrue) {
             messageResId = R.string.correct_toast;
         }
         else {
